@@ -1,0 +1,40 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 70px;
+    animation: scrollIcons 60s linear infinite;
+    width: max-content;
+  }
+  
+  .carousel-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    box-shadow: 0 0 0 0.9px #2a2f44;
+    padding: 10px;
+    border-radius: 15%;
+  }
+  
+  /* Animación sin cortes */
+  @keyframes scrollIcons {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-33.33%);
+    }
+  }
+  
+  
+  .carousel-container{
+    background-color:#180938;
+    padding: 150px;
+  }
+
+
