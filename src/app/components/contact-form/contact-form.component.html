@@ -1,49 +1,34 @@
 <section class="contact-form-section text-white">
-    <div class="container formulario">
-      <div class="row justify-content-center">
-        <!-- Columna para la imagen -->
-        <!-- <div class="col-12 col-md-6" style="background-color: green;" >
-          <img src="../../../assets/images/fondo.jpg" alt="Imagen de contacto" class="img-fluid" />
-        </div> -->
-  
-        <!-- Columna para el formulario -->
-        <div class="col-12 col-md-6 ojo" style="background-color: rgb(0,0,0,0.7);">
-          <h1 class="text-center mb-5">Contáctanos</h1>
-          <form>
-            <!-- Campo para el nombre -->
-            <div class="form-group mb-4">
-              <!-- <label for="nombre">Nombre</label> -->
-              <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-            </div>
-  
-            <!-- Campo para el apellido -->
-            <div class="form-group mb-4">
-              <!-- <label for="apellido">Apellido</label> -->
-              <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-            </div>
-  
-            <!-- Campo para el correo -->
-            <div class="form-group mb-4">
-              <!-- <label for="correo">Correo electrónico</label> -->
-              <input type="email" class="form-control" id="correo" placeholder="Email" required>
-            </div>
-  
-            <!-- Campo para el teléfono -->
-            <div class="form-group mb-4">
-              <!-- <label for="telefono">Teléfono</label> -->
-              <input type="text" class="form-control" id="telefono" placeholder="Teléfono" required>
-            </div>
-  
-            <!-- Campo para el mensaje -->
-            <div class="form-group">
-              <!-- <label for="mensaje">Mensaje</label> -->
-              <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-            </div>
-  
-            <!-- Botón de envío -->
-            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-          </form>
-        </div>
+  <div class="container formulario">
+    <div class="row justify-content-center">
+      <!-- Columna para el formulario -->
+      <div class="col-lg-5 col-md-6 col-12 p-4">
+        <h1 class="text-center mb-4">Contáctanos</h1>
+        <form>          
+
+          <div class="form-group mb-3">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" spellcheck="false" required autocomplete="off">
+          </div>
+
+          <div class="form-group mb-3">
+            <input type="text" class="form-control" id="apellido" placeholder="Apellido" spellcheck="false" required autocomplete="off">
+          </div>
+
+          <div class="form-group mb-3">
+            <input type="email" class="form-control" id="correo" placeholder="Email" required spellcheck="false" maxlength="60" autocomplete="off">
+          </div>
+
+          <div class="form-group mb-3">
+            <input type="text" class="form-control" id="telefono" placeholder="Teléfono" required spellcheck="false" maxlength="12" autocomplete="off">
+          </div>
+
+          <div class="form-group mb-3">
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required spellcheck="false" maxlength="200" autocomplete="off"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-50">Enviar</button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
