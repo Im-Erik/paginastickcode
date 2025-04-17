@@ -11,7 +11,7 @@ import ContactFormComponent from './components/contact-form/contact-form.compone
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'site';
+  title = 'Stickcode - Desarrollamos tus sueños';
 }
 
 
