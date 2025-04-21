@@ -1,10 +1,13 @@
 <div class="carousel-container">
-  <h3 class="text-center text-white mb-2">Tecnologías con las que trabajamos</h3>
+  <h3 class="h3-carrusel text-center text-white mb-2">Tecnologías con las que trabajamos</h3>
   <div class="text-center">
-    <small class="text-white ">Lenguajes, frameworks y herramientas que utilizamos</small>
+    <small class="text-white">Lenguajes, frameworks y herramientas que utilizamos</small>
   </div>
-    <div class="carousel-track" style="margin-top: 100px;">
-      <img *ngFor="let icon of repeatedIcons" [src]="icon" class="carousel-icon" alt="Icono">
+
+  <!-- Wrapper necesario para ocultar overflow -->
+  <div class="carousel-track-wrapper mt-5">
+    <div class="carousel-track">
+      <img *ngFor="let icon of repeatedIcons" [src]="icon" class="carousel-icon" alt="Icono" />
     </div>
   </div>
-  
+</div>

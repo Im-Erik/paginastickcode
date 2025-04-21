@@ -1,60 +1,53 @@
 .contact-form-section {
   padding: 50px 0;
+  background: linear-gradient(90deg, #13151c, #6522eb, #00aafa);
+  color: #fff;
 }
 
 .contact-form-section .img-fluid {
   border-radius: 8px;
 }
 
-.form-group label {
-  font-weight: bold;
-}
-
-.btn-block {
-  margin-top: 20px;
-}
-
-.contact-form-section {
-  background: -webkit-linear-gradient(90deg,#13151c,#6522eb,#00aafa);
-  background: linear-gradient(90deg,#13151c,#6522eb,#00aafa);
-}
-
 .formulario {
-  justify-content: center;
-  margin: 50px;
+  margin: 0 auto; // centramos y eliminamos los márgenes fijos
+  padding: 0 15px; // padding lateral para que respete márgenes en móviles
+  max-width: 600px; // controlamos que nunca se pase del ancho deseado
 }
 
-.padding-form {
-  padding: 50px;
+.form-group {
+  margin-bottom: 1rem;
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid #6522eb;
+    outline: none;
+    background: transparent;
+    padding: 6px 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    width: 100%;
+    resize: none;
+
+    &::placeholder {
+      color: #999;
+      opacity: 1;
+    }
+
+    &:focus {
+      background: transparent;
+      box-shadow: none;
+      color: #fff;
+      border-bottom: 1px solid #6522eb;
+    }
+  }
 }
 
-/* Estilo para los campos de texto e input */
-input[type="text"],
-input[type="email"],
-textarea {
-  border: none;
-  border-bottom: 1px solid #6522eb;
-  outline: none;
-  background: transparent;
-  padding: 6px 0; 
-  border-radius: 0; 
-  box-shadow: none;
-  color: #fff;
-  resize: none;
-}
-
-/* Estilo para el placeholder */
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-textarea::placeholder {
-  color: #999999;
-  opacity: 1;
-}
-
-textarea:focus {
-  background: transparent !important;
-  box-shadow: none;
-  color: #fff;
-  outline: none !important;
-  border-bottom: 1px solid #6522eb; /* Reafirmamos el borde */
+.btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 200px;
 }

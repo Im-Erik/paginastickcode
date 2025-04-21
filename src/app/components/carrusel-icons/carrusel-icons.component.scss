@@ -1,15 +1,22 @@
 .carousel-container {
   width: 100%;
   overflow: hidden;
-  white-space: nowrap;
   position: relative;
+  background-color: #180938;
+  padding: 100px 20px;
+  box-sizing: border-box;
+}
+
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .carousel-track {
   display: flex;
   gap: 70px;
-  animation: scrollIcons 100s linear infinite;
-  width: max-content;
+  animation: scrollIcons 180s linear infinite;
+  width: fit-content;
 }
 
 .carousel-icon {
@@ -19,21 +26,36 @@
   box-shadow: 0 0 0 0.9px #2a2f44;
   padding: 10px;
   border-radius: 15%;
+  flex-shrink: 0;
 }
 
-/* Animación sin cortes */
+/* Animación */
 @keyframes scrollIcons {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-33.33%);
+    transform: translateX(-50%);
   }
 }
 
+/* Responsivo para móviles */
+@media (max-width: 576px) {
+  .carousel-container {
+    padding: 70px 10px;
+  }
 
-.carousel-container{
-  background-color:#180938;
-  padding: 150px;
+  .h3-carrusel{
+    display: none;
+  }
+  .carousel-track {
+    gap: 40px;
+    animation: scrollIcons 150s linear infinite;
+  }
+
+  .carousel-icon {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+  }
 }
-

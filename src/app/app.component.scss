@@ -1,45 +1,22 @@
-
-.cursor{
-  color: var(--secondary-color);
-  font-weight: bold;
-  animation: blink 1s step-start infinite;
-}
-
-@keyframes blink{
-  50%{
-    opacity: 0;
-  }
-}
-
-.redes-container {
-    display: flex;
-    align-items:start
+.cursor {
+    display: inline-block;
+    color: var(--secondary-color); // o el color que quieras para el cursor
+    font-weight: bold;
+    animation: blink 1s step-start infinite;
   }
   
-  .redsocial {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    transition: transform 0.2s ease-in-out;
-  
-    svg {
-      width: 26px;
-      height: 26px;
-      fill: #00bcd4;
-      stroke: rgba(255, 255, 255, 0.4);
-      stroke-width: 0.8;
-      transition: stroke 0.3s ease-in-out;
+  // Animación del parpadeo
+  @keyframes blink {
+    50% {
+      opacity: 0;
     }
+  }
   
-    &:hover {
-      transform: translateY(-2px);
-    }
-  
-    &:hover svg {
-      stroke: #00bcd4;
+
+
+@media (max-width: 767px) {
+    .header img {
+      display: none;
     }
   }
   
