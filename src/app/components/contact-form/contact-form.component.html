@@ -1,34 +1,69 @@
-<section class="contact-form-section text-white">
-  <div class="container formulario">
-    <div class="row justify-content-center">
-      <!-- Columna para el formulario -->
-      <div class="col-lg-5 col-md-6 col-12 p-4">
-        <h1 class="text-center mb-4">Contáctanos</h1>
-        <form>          
+<section class="formulario">
+  <div class="container py-5">
+    <div class="row justify-content-center align-items-stretch">
 
-          <div class="form-group mb-3">
-            <input type="text" class="form-control" id="nombre" placeholder="Nombre" spellcheck="false" required autocomplete="off">
+      <!-- Imagen lateral (solo visible en pantallas md o más grandes) -->
+      <div class="col-lg-6 d-none d-lg-block p-0 position-relative imagen">
+        <img src="../../../assets/images/prevideo2.jpg" alt="Imagen decorativa" class="img-fluid h-100 w-100 object-fit-cover rounded-start">
+        <div class="overlay-color position-absolute top-0 start-0 w-100 h-100 rounded-start"></div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-12 col-md-10 col-lg-6 form">
+        <form class="form-modern text-white p-4 rounded-end w-100 h-100 d-flex flex-column justify-content-center">
+          <h2 class="text-center mb-4">Contáctanos</h2>
+          <p class="text-center mb-4">Quieres hacernos alguna consulta, tienes dudas ?</p>
+
+          <!-- Nombre -->
+          <div class="mb-4 input-group">
+            <span class="input-group-text icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+              </svg>
+            </span>
+            <input type="text" class="form-control" placeholder="Nombre completo" required autocomplete="off" />
           </div>
 
-          <div class="form-group mb-3">
-            <input type="text" class="form-control" id="apellido" placeholder="Apellido" spellcheck="false" required autocomplete="off">
+          <!-- Correo -->
+          <div class="mb-4 input-group">
+            <span class="input-group-text icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+              </svg>
+            </span>
+            <input type="text" class="form-control" placeholder="Correo electrónico" required autocomplete="off" />
           </div>
 
-          <div class="form-group mb-3">
-            <input type="email" class="form-control" id="correo" placeholder="Email" required spellcheck="false" maxlength="60" autocomplete="off">
+          <!-- Teléfono -->
+          <div class="mb-4 input-group">
+            <span class="input-group-text icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+              </svg>
+            </span>
+            <input type="text" class="form-control" placeholder="Teléfono" required autocomplete="off" />
           </div>
 
-          <div class="form-group mb-3">
-            <input type="text" class="form-control" id="telefono" placeholder="Teléfono" required spellcheck="false" maxlength="12" autocomplete="off">
+          <!-- Mensaje -->
+          <div class="mb-4">
+            <textarea class="form-control" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
           </div>
 
-          <div class="form-group mb-3">
-            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required spellcheck="false" maxlength="200" autocomplete="off"></textarea>
+          <!-- Check -->
+          <div class="mb-4 form-check">
+            <input type="checkbox" class="form-check-input" id="privacy" required />
+            <label class="form-check-label" for="privacy">Acepto la política de privacidad</label>
           </div>
 
-          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          <!-- Botón -->
+          <div class="d-grid mb-4">
+            <button type="submit" class="btn btn-primary">ENVIAR</button>
+          </div>
         </form>
       </div>
     </div>
+
+    <small class="text-center m-4 text-muted d-block mx-auto">Diseñado por Stickcode Corporation</small>
+
   </div>
 </section>
