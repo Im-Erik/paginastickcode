@@ -10,15 +10,17 @@
 }
 
 @font-face {
-    font-family: 'Gully'; // Reemplaza 'NombreDeLaFuente' por el nombre que quieras asignarle a tu fuente
-    src: url('assets/fonts/Gully-CDLight-BF663990caa9123.otf') format('opentype'); // Reemplaza 'nombreDeTuFuente.otf' por el nombre de tu archivo .otf
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Gully';
+  src: url('assets/fonts/Gully-CDLight.woff2') format('woff2'),
+       url('assets/fonts/Gully-CDLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+
 body {
-    font-family: 'Gully', sans-serif; // Reemplaza 'NombreDeLaFuente' por el nombre de tu fuente     
+    font-family: 'Gully-CDLight', sans-serif; // Reemplaza 'NombreDeLaFuente' por el nombre de tu fuente     
 
     h1 {
         letter-spacing: 2px;
