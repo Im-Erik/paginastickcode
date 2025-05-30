@@ -1,6 +1,6 @@
 .cursor {
     display: inline-block;
-    color: var(--secondary-color); // o el color que quieras para el cursor
+    color: var(--light-color); // o el color que quieras para el cursor
     font-weight: bold;
     animation: blink 1s step-start infinite;
   }

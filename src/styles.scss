@@ -127,7 +127,7 @@ a:hover{color:var(--primary-color);}
     bottom: 10%;
     transform: translate(-50%);
     z-index: 1;
-    color: var(--secondary-color);
+    color: #33013d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,7 +135,7 @@ a:hover{color:var(--primary-color);}
 }
 
 .hero__scroll-btn:hover{
-    color: var(--secondary-color);
+    color: var(--primary-color);
     opacity: 0.8;
 }
 
