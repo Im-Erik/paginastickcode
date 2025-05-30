@@ -1,70 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 
-:root{
-    --primary-color:#6522EB;
-    --secondary-color:#00AAFA;
-    --dark-color:#13151C;
-    --light-color:#fff;
+:root {
+    --primary-color: #6522EB;
+    --secondary-color: #00AAFA;
+    --dark-color: #13151C;
+    --light-color: #fff;
     //--bs-body-font-family:Gully;
 }
 
 @font-face {
     font-family: 'Gully'; // Reemplaza 'NombreDeLaFuente' por el nombre que quieras asignarle a tu fuente
-    src: url('assets/fonts/Gully-CDLight-BF663990caa9123.otf') format('opentype'); // Reemplaza 'nombreDeTuFuente.otf' por el nombre de tu archivo .otf
-   }
+    src: url('/assets/fonts/Gully-CDLight-BF663990caa9123.otf') format('opentype'); // Reemplaza 'nombreDeTuFuente.otf' por el nombre de tu archivo .otf
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
-  body {
+body {
     font-family: 'Gully', sans-serif; // Reemplaza 'NombreDeLaFuente' por el nombre de tu fuente     
-    h1{
+
+    h1 {
         letter-spacing: 2px;
     }
-  }
+}
 
-html{scroll-behavior: smooth;}
+html {
+    scroll-behavior: smooth;
+}
 
-a{text-decoration: none;}
-a:hover{color:var(--primary-color);}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
 
 
 
-.container-custom{
+.container-custom {
     width: 100%;
     padding: 0 1rem;
     margin: 0 auto;
 }
 
-@media(min-width:1200px){
-    .container-custom{width: 1140px; }
-}
-@media(min-width:1400px){
-    .container-custom{width: 1340px; }
-}
-@media(min-width:1600px){
-    .container-custom{width: 1520px; }
+@media(min-width:1200px) {
+    .container-custom {
+        width: 1140px;
+    }
 }
 
+@media(min-width:1400px) {
+    .container-custom {
+        width: 1340px;
+    }
+}
+
+@media(min-width:1600px) {
+    .container-custom {
+        width: 1520px;
+    }
+}
 
 
 
-.header{
+
+.header {
     z-index: 2;
 }
 
-#navbar{
+#navbar {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    background-color:#333f46;
+    background-color: #333f46;
     z-index: 4;
-    h3{
+
+    h3 {
         color: #fff;
     }
 }
 
-.dropdown-nav__closeNavBtn{
+.dropdown-nav__closeNavBtn {
     position: absolute;
     top: 20px;
     right: 16px;
@@ -72,26 +92,29 @@ a:hover{color:var(--primary-color);}
 }
 
 
-.dropdown-nav__container{
-        height: 100vh;
-        padding: 0 1rem;
-        p{
-            color:var(--light-color);
-        } 
+.dropdown-nav__container {
+    height: 100vh;
+    padding: 0 1rem;
+
+    p {
+        color: var(--light-color);
+    }
 }
 
-.hero{
+.hero {
     position: relative;
     height: 100vh;
     background-color: var(--dark-color);
     overflow: hidden;
 }
 
-@media(min-width:1400px){
-    .hero__heading{font-size: 3.2rem;}    
+@media(min-width:1400px) {
+    .hero__heading {
+        font-size: 3.2rem;
+    }
 }
 
-.hero__video{
+.hero__video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -102,7 +125,7 @@ a:hover{color:var(--primary-color);}
     transform: translateX(-50%)translateY(-50%);
 }
 
-.hero__overlay{
+.hero__overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -113,15 +136,15 @@ a:hover{color:var(--primary-color);}
     z-index: 1;
 }
 
-.hero__content{
+.hero__content {
     z-index: 1;
 }
 
-.hero__content-width{
+.hero__content-width {
     max-width: 540px;
 }
 
-.hero__scroll-btn{
+.hero__scroll-btn {
     position: absolute;
     left: 50%;
     bottom: 10%;
@@ -134,67 +157,62 @@ a:hover{color:var(--primary-color);}
     text-decoration: none;
 }
 
-.hero__scroll-btn:hover{
+.hero__scroll-btn:hover {
     color: var(--primary-color);
     opacity: 0.8;
 }
 
-.hero__scroll-btn .bi{
+.hero__scroll-btn .bi {
     transition-delay: 0.8s;
     animation: bounce 1s infinite alternate;
 }
 
-@keyframes bounce{
-    from{
+@keyframes bounce {
+    from {
         transform: translateY(0px);
-    }to{
+    }
+
+    to {
         transform: translateY(-10px);
     }
 }
 
 
-.steps{
+.steps {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.steps__section-thumbnail{
+.steps__section-thumbnail {
     height: 240px;
     object-fit: cover;
     margin: 0 auto;
 }
 
-.steps__content-width{
+.steps__content-width {
     max-width: 456px;
     margin: 0 auto;
 }
 
-.steps--background{
+.steps--background {
     background-color: var(--dark-color);
-    color:var(--secondary-color)
+    color: var(--secondary-color)
 }
 
-@media(min-width:544px){
-    .steps{
+@media(min-width:544px) {
+    .steps {
         padding-top: 80px;
         padding-bottom: 80px;
     }
 }
 
-.steps__section-thumbnail{
+.steps__section-thumbnail {
     height: auto;
 }
 
-.footer{
-    background-color:#13151C;   
-    padding: 150px;   
+.footer {
+    background-color: #13151C;
+    padding: 150px;
     font-size: 1rem;
     color: rgb(161, 160, 160);
 }
-
-
-
-
-
-  
-
